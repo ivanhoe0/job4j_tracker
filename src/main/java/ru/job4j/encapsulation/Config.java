@@ -15,6 +15,7 @@ public class Config {
 
     public String getProperty(String key) {
         return search(key);
+
     }
 
     private String search(String key) {
