@@ -1,9 +1,9 @@
 package ru.job4j.encapsulation;
 
 public class Config {
-    private String name;
-    private int position;
-    private String[] properties;
+    public String name;
+    public int position;
+    public String[] properties;
 
     public Config(String name) {
         this.name = name;
@@ -15,7 +15,6 @@ public class Config {
 
     public String getProperty(String key) {
         return search(key);
-
     }
 
     private String search(String key) {
