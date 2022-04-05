@@ -8,9 +8,6 @@ public class Builder extends Engineer {
         this.drawing = drawing;
     }
 
-    public Builder() {
-    }
-
     public void makeAnDrawing() {
         System.out.println("Drawing");
     }

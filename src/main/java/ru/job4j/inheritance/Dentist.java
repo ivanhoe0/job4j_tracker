@@ -8,9 +8,6 @@ public class Dentist extends Doctor {
         this.dentistry = dentistry;
     }
 
-    public Dentist() {
-    }
-
     public void healTeeth() {
         System.out.println("лечить зубы");
     }

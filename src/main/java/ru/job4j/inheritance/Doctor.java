@@ -8,9 +8,6 @@ public class Doctor extends Profession {
         this.chemistry = chemistry;
     }
 
-    public Doctor() {
-    }
-
     public void heal() {
         System.out.println("Лечение");
     }

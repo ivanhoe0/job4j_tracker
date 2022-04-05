@@ -8,9 +8,6 @@ public class Programmer extends Engineer {
         this.informatics = informatics;
     }
 
-    public Programmer() {
-    }
-
     public void createAlgorithm() {
         System.out.println("Алгоритм");
     }

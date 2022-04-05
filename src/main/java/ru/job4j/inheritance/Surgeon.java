@@ -8,9 +8,6 @@ public class Surgeon extends Doctor {
         this.anatomy = anatomy;
     }
 
-    public Surgeon() {
-    }
-
     public void makeAnOperation() {
         System.out.println("Операция");
     }

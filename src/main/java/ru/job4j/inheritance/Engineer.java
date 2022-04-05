@@ -8,9 +8,6 @@ public class Engineer extends Profession {
         this.mathematics = mathematics;
     }
 
-    public Engineer() {
-    }
-
     public void makeAnCalculation() {
         System.out.println("расчет произведен");
     }
