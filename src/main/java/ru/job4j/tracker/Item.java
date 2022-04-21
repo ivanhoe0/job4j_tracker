@@ -18,6 +18,9 @@ public class Item {
         this.name = name;
     }
 
+    public Item() {
+    }
+
     @Override
     public String toString() {
         return "Item{"
@@ -25,9 +28,6 @@ public class Item {
                 + ", name='" + name + '\''
                 + ", created=" + created.format(FORMATTER)
                 + '}';
-    }
-
-    public Item() {
     }
 
     public LocalDateTime getCreated() {
