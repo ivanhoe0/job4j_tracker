@@ -9,6 +9,15 @@ public class Item {
     private String name;
     private LocalDateTime created = LocalDateTime.now();
 
+    public Item(String name) {
+        this.name = name;
+    }
+
+    public Item(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "Item{"
@@ -19,15 +28,6 @@ public class Item {
     }
 
     public Item() {
-    }
-
-    public Item(String name) {
-        this.name = name;
-    }
-
-    public Item(int id, String name) {
-        this.id = id;
-        this.name = name;
     }
 
     public LocalDateTime getCreated() {
