@@ -29,7 +29,7 @@ public class StartUITest {
                 new String[] {"0", "1", "New item name", "1"}
         );
         UserAction[] actions = {
-                new ReplaceAction(),
+                new EditAction(),
                 new Exit()
         };
         new StartUI().init(in, tracker, actions);
