@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 public class StartUITest {
     @Test
     public void whenCreateItem() {
-        Output output = new ConsoleOutput();
+        Output output = new StubOutput();
         Input in = new StubInput(
                 new String[] {"0", "Item name", "1"}
         );
@@ -23,7 +23,7 @@ public class StartUITest {
 
     @Test
     public void whenReplaceItem() {
-        Output output = new ConsoleOutput();
+        Output output = new StubOutput();
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Replaced item"));
         String replacedName = "New item name";
@@ -40,7 +40,7 @@ public class StartUITest {
 
     @Test
     public void whenDeleteItem() {
-        Output output = new ConsoleOutput();
+        Output output = new StubOutput();
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Deleted item"));
         Input in = new StubInput(
