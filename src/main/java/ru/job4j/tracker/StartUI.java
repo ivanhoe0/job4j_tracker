@@ -15,7 +15,7 @@ public class StartUI {
         while (run) {
             this.showMenu(actions);
             int select = input.askInt("Select: ");
-            if (select < 0 || select > actions.size() - 1) {
+            if (select < 0 || select >= actions.size()) {
                 out.prinln("Wrong input, you can select: 0 .. " + (actions.size() - 1));
                 continue;
             }
@@ -27,9 +27,8 @@ public class StartUI {
 
     private void showMenu(List<UserAction> actions) {
         out.prinln("Menu:");
-        int i = 0;
-        for (UserAction action : actions) {
-            out.prinln(i++ + ". " + action.name());
+        for (int i = 0; i < actions.size(); i++) {
+            out.prinln(i + ". " + actions.get(i).name());
         }
     }
 
@@ -37,14 +36,15 @@ public class StartUI {
         Output output = new ConsoleOutput();
         Input input = new ValidateInput(new ConsoleInput(), output);
         Tracker tracker = new Tracker();
-        List<UserAction> actions = new ArrayList<>();
-        actions.add(new CreateAction(output));
-        actions.add(new ShowAllAction(output));
-        actions.add(new EditAction(output));
-        actions.add(new DeleteAction(output));
-        actions.add(new FindByIdAction(output));
-        actions.add(new FindByNameAction(output));
-        actions.add(new Exit());
+        List<UserAction> actions = List.of(
+                new CreateAction(output),
+                new ShowAllAction(output),
+                new EditAction(output),
+                new DeleteAction(output),
+                new FindByIdAction(output),
+                new FindByNameAction(output),
+                new Exit()
+        );
         new StartUI(output).init(input, tracker, actions);
     }
 }

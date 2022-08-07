@@ -17,9 +17,10 @@ public class StartUITest {
                 new String[] {"0", "Item name", "1"}
         );
         Tracker tracker = new Tracker();
-        List<UserAction> actions = new ArrayList<>();
-        actions.add(new CreateAction(output));
-        actions.add(new Exit());
+        List<UserAction> actions = List.of(
+                new CreateAction(output),
+                new Exit()
+        );
         new StartUI(output).init(in, tracker, actions);
         assertThat(tracker.findAll().get(0).getName(), is("Item name"));
     }
@@ -33,9 +34,10 @@ public class StartUITest {
         Input in = new StubInput(
                 new String[] {"0", String.valueOf(item.getId()), "New item name", "1"}
         );
-        List<UserAction> actions = new ArrayList<>();
-        actions.add(new EditAction(output));
-        actions.add(new Exit());
+        List<UserAction> actions = List.of(
+                new EditAction(output),
+                new Exit()
+        );
         new StartUI(output).init(in, tracker, actions);
         assertThat(tracker.findById(item.getId()).getName(), is(replacedName));
     }
@@ -48,9 +50,10 @@ public class StartUITest {
         Input in = new StubInput(
                 new String[] {"0", String.valueOf(item.getId()), "1"}
         );
-        List<UserAction> actions = new ArrayList<>();
-        actions.add(new DeleteAction(output));
-        actions.add(new Exit());
+        List<UserAction> actions = List.of(
+                new DeleteAction(output),
+                new Exit()
+        );
         new StartUI(output).init(in, tracker, actions);
         assertThat(tracker.findById(item.getId()), is(nullValue()));
     }
@@ -61,9 +64,10 @@ public class StartUITest {
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Test"));
         String newName = "Edited item";
-        List<UserAction> actions = new ArrayList<>();
-        actions.add(new EditAction(output));
-        actions.add(new Exit());
+        List<UserAction> actions = List.of(
+                new EditAction(output),
+                new Exit()
+        );
         String[] answers = {
                 "0", String.valueOf(item.getId()), newName, "1"
         };
@@ -88,9 +92,10 @@ public class StartUITest {
         Tracker tracker = new Tracker();
         Item one = tracker.add(new Item("Test1"));
         Item two = tracker.add(new Item("Test2"));
-        List<UserAction> actions = new ArrayList<>();
-        actions.add(new ShowAllAction(output));
-        actions.add(new Exit());
+        List<UserAction> actions = List.of(
+                new ShowAllAction(output),
+                new Exit()
+        );
         String[] answers = {
                 "0", "1"
         };
@@ -116,9 +121,10 @@ public class StartUITest {
         Output output = new StubOutput();
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Test"));
-        List<UserAction> actions = new ArrayList<>();
-        actions.add(new FindByNameAction(output));
-        actions.add(new Exit());
+        List<UserAction> actions = List.of(
+                new FindByNameAction(output),
+                new Exit()
+        );
         String[] answers = {
                 "0", item.getName(), "1"
         };
@@ -142,9 +148,10 @@ public class StartUITest {
         Output output = new StubOutput();
         Tracker tracker = new Tracker();
         Item item = tracker.add(new Item("Test"));
-        List<UserAction> actions = new ArrayList<>();
-        actions.add(new FindByIdAction(output));
-        actions.add(new Exit());
+        List<UserAction> actions = List.of(
+                new FindByIdAction(output),
+                new Exit()
+        );
         String[] answers = {
                 "0", String.valueOf(item.getId()), "1"
         };
