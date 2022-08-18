@@ -4,7 +4,6 @@ import java.util.*;
 
 public class AnalyzeByMap {
     public static double averageScore(List<Pupil> pupils) {
-        double rsl;
         double sum = 0;
         double count = 0;
         for (Pupil pupil : pupils) {
@@ -13,8 +12,7 @@ public class AnalyzeByMap {
                 count++;
             }
         }
-        rsl = sum / count;
-        return rsl;
+        return sum / count;
     }
 
     public static List<Label> averageScoreByPupil(List<Pupil> pupils) {
@@ -36,20 +34,16 @@ public class AnalyzeByMap {
         List<Label> rsl = new ArrayList<>();
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                if (sumOfScoresBySubjects.containsKey(subject.name())) {
-                    int score = sumOfScoresBySubjects.get(subject.name()) + subject.score();
-                    sumOfScoresBySubjects.put(subject.name(), score);
-                    score = 0;
-                } else {
+                Integer score = sumOfScoresBySubjects.get(subject.name());
+                if (score == null) {
                     sumOfScoresBySubjects.put(subject.name(), subject.score());
+                } else {
+                    sumOfScoresBySubjects.put(subject.name(), score + subject.score());
                 }
             }
         }
         for (String key : sumOfScoresBySubjects.keySet()) {
-            double sum = sumOfScoresBySubjects.get(key);
-            double amountOfPupils = pupils.size();
-            double avg = sum / amountOfPupils;
-            rsl.add(new Label(key, avg));
+            rsl.add(new Label(key, (double) sumOfScoresBySubjects.get(key) / pupils.size()));
         }
         return rsl;
     }
