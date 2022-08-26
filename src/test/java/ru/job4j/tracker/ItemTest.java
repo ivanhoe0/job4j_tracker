@@ -42,5 +42,7 @@ public class ItemTest {
                 new Item("Test3"),
                 new Item("Test1")
         );
+        Collections.sort(items, new ItemDescByName());
+        assertEquals(items, expected);
     }
 }
