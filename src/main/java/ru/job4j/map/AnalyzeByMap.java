@@ -34,12 +34,7 @@ public class AnalyzeByMap {
         List<Label> rsl = new ArrayList<>();
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                Integer score = sumOfScoresBySubjects.get(subject.name());
-                if (score == null) {
-                    sumOfScoresBySubjects.put(subject.name(), subject.score());
-                } else {
-                    sumOfScoresBySubjects.put(subject.name(), score + subject.score());
-                }
+                sumOfScoresBySubjects.merge(subject.name(), subject.score(), (oldValue, newValue) -> oldValue + subject.score());
             }
         }
         for (String key : sumOfScoresBySubjects.keySet()) {
@@ -67,13 +62,7 @@ public class AnalyzeByMap {
         List<Label> rsl = new ArrayList<>();
         for (Pupil pupil : pupils) {
             for (Subject subject : pupil.subjects()) {
-                if (sumOfScoresBySubjects.containsKey(subject.name())) {
-                    int score = sumOfScoresBySubjects.get(subject.name()) + subject.score();
-                    sumOfScoresBySubjects.put(subject.name(), score);
-                    score = 0;
-                } else {
-                    sumOfScoresBySubjects.put(subject.name(), subject.score());
-                }
+                sumOfScoresBySubjects.merge(subject.name(), subject.score(), (oldValue, newValue) -> oldValue + subject.score());
             }
         }
         for (String key : sumOfScoresBySubjects.keySet()) {
