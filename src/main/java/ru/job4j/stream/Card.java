@@ -14,10 +14,10 @@ public class Card {
     }
 
     public static void main(String[] args) {
-        List<Card> deckOfCards = Stream.of(Suit.values())
+        Stream.of(Suit.values())
                 .flatMap(suit -> Stream.of(Value.values())
                         .map(value -> new Card(suit, value)))
-                        .toList();
+                        .forEach(System.out::println);
 
     }
 }
