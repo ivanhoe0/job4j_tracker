@@ -69,6 +69,7 @@ public class SqlTracker implements Store {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        item.setId(id);
         return result;
     }
 
