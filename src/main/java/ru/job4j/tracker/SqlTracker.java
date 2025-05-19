@@ -88,13 +88,7 @@ public class SqlTracker implements Store {
         try (PreparedStatement statement = connection.prepareStatement("SELECT * FROM items")) {
             try (ResultSet results = statement.executeQuery()) {
                 while (results.next()) {
-                    items.add(
-                            new Item(
-                                    results.getInt(1),
-                                    results.getString(2),
-                                    results.getTimestamp(3).toLocalDateTime()
-                            )
-                    );
+                    items.add(createItem(results));
                 }
             }
         } catch (SQLException e) {
@@ -111,13 +105,7 @@ public class SqlTracker implements Store {
             statement.setString(1, key);
             try (ResultSet results = statement.executeQuery()) {
                 while (results.next()) {
-                    items.add(
-                            new Item(
-                                    results.getInt(1),
-                                    results.getString(2),
-                                    results.getTimestamp(3).toLocalDateTime()
-                            )
-                    );
+                    items.add(createItem(results));
                 }
             }
         } catch (SQLException e) {
@@ -133,16 +121,19 @@ public class SqlTracker implements Store {
             statement.setInt(1, id);
             try (ResultSet results = statement.executeQuery()) {
                 if (results.next()) {
-                    result = new Item(
-                            results.getInt(1),
-                            results.getString(2),
-                            results.getTimestamp(3).toLocalDateTime()
-                    );
+                    result = createItem(results);
                 }
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return result;
+    }
+
+    private Item createItem(ResultSet set) throws SQLException {
+        return new Item(
+                set.getInt(1),
+                set.getString(2),
+                set.getTimestamp(3).toLocalDateTime());
     }
 }
