@@ -14,13 +14,13 @@ public class DeleteAction implements UserAction {
 
     @Override
     public boolean execute(Input input, Store tracker) {
-        out.prinln("===== Delete item =====");
+        out.println("===== Delete item =====");
         int id = input.askInt("Enter id: ");
         tracker.delete(id);
         if (tracker.findById(id) == null) {
-            out.prinln("Заявка удалена успешно.");
+            out.println("Заявка удалена успешно.");
         } else {
-            out.prinln("Ошибка удаления заявки.");
+            out.println("Ошибка удаления заявки.");
         }
         return true;
     }

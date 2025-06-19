@@ -15,7 +15,7 @@ public class StartUI {
             this.showMenu(actions);
             int select = input.askInt("Select: ");
             if (select < 0 || select >= actions.size()) {
-                out.prinln("Wrong input, you can select: 0 .. " + (actions.size() - 1));
+                out.println("Wrong input, you can select: 0 .. " + (actions.size() - 1));
                 continue;
             }
             UserAction action = actions.get(select);
@@ -25,19 +25,21 @@ public class StartUI {
     }
 
     private void showMenu(List<UserAction> actions) {
-        out.prinln("Menu:");
+        out.println("Menu:");
         for (int i = 0; i < actions.size(); i++) {
-            out.prinln(i + ". " + actions.get(i).name());
+            out.println(i + ". " + actions.get(i).name());
         }
     }
 
     public static void main(String[] args) {
         Output output = new ConsoleOutput();
         Input input = new ValidateInput(new ConsoleInput(), output);
-        Store tracker = new SqlTracker();
+        Store tracker = new MemTracker();
         List<UserAction> actions = List.of(
                 new CreateAction(output),
                 new ShowAllAction(output),
+                new CreateManyItems(output),
+                new DeleteAllItems(output),
                 new EditAction(output),
                 new DeleteAction(output),
                 new FindByIdAction(output),

@@ -1,0 +1,19 @@
+Ипользуя замеры времени на выполнение программ были получены следующие данные:
+
+Creating 1000000 items complete in 2951ms
+Creating 100000 items complete in 2145ms
+Creating 10000000 items complete in 8838ms
+Creating 100 items complete in 1954ms
+Creating 10 items complete in 1819ms
+Deleting all items complete in 8ms
+Creating 1000000 items complete in 6150ms
+Deleting all items complete in 122002ms
+Creating 100000 items complete in 7329ms
+Creating 100000 items complete in 6520ms
+Deleting all items complete in 4359ms
+Creating 1000000 items complete in 4364ms
+
+Исходя из них видно, что на создание 1млн заявок у программы ушло примерно 6 секунд, в то время как удаление такого количества заявок заняло примерно 122 секунды.
+Используя утилиту jconsole было уставновлено, что сборка мусора происходила после того, как были удалены строки а затем дабавлены заново в количестве 1млн строк.
+Моменты сборки мусора были отчетливо видны по резкому спаду на графике.
+При попытке добавления заявок в количестве 100млн программа упала с ошибкой: OutOfMemoryError:java heap space.
