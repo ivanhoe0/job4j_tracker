@@ -17,3 +17,1545 @@ Creating 1000000 items complete in 4364ms
 Используя утилиту jconsole было уставновлено, что сборка мусора происходила после того, как были удалены строки а затем дабавлены заново в количестве 1млн строк.
 Моменты сборки мусора были отчетливо видны по резкому спаду на графике.
 При попытке добавления заявок в количестве 100млн программа упала с ошибкой: OutOfMemoryError:java heap space.
+Logging Provider: org.jboss.logging.Log4jLoggerProvider
+Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+HHH000412: Hibernate ORM core version 5.6.11.Final
+HHH000206: hibernate.properties not found
+trying via [new URL("hibernate.cfg.xml")]
+trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+In resolveEntity(-//Hibernate/Hibernate Configuration DTD 3.0//EN, http://hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+Recognized alternate hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Adding type registration boolean -> org.hibernate.type.BooleanType@635572a7
+Adding type registration boolean -> org.hibernate.type.BooleanType@635572a7
+Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@635572a7
+Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@7a1a3478
+Adding type registration true_false -> org.hibernate.type.TrueFalseType@93cf163
+Adding type registration yes_no -> org.hibernate.type.YesNoType@4b6690c0
+Adding type registration byte -> org.hibernate.type.ByteType@66565121
+Adding type registration byte -> org.hibernate.type.ByteType@66565121
+Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@66565121
+Adding type registration character -> org.hibernate.type.CharacterType@49c6c24f
+Adding type registration char -> org.hibernate.type.CharacterType@49c6c24f
+Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@49c6c24f
+Adding type registration short -> org.hibernate.type.ShortType@5d5f10b2
+Adding type registration short -> org.hibernate.type.ShortType@5d5f10b2
+Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5d5f10b2
+Adding type registration integer -> org.hibernate.type.IntegerType@63a270c9
+Adding type registration int -> org.hibernate.type.IntegerType@63a270c9
+Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@63a270c9
+Adding type registration long -> org.hibernate.type.LongType@73a2e526
+Adding type registration long -> org.hibernate.type.LongType@73a2e526
+Adding type registration java.lang.Long -> org.hibernate.type.LongType@73a2e526
+Adding type registration float -> org.hibernate.type.FloatType@69653e16
+Adding type registration float -> org.hibernate.type.FloatType@69653e16
+Adding type registration java.lang.Float -> org.hibernate.type.FloatType@69653e16
+Adding type registration double -> org.hibernate.type.DoubleType@604c5de8
+Adding type registration double -> org.hibernate.type.DoubleType@604c5de8
+Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@604c5de8
+Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@584f54e6
+Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@584f54e6
+Adding type registration big_integer -> org.hibernate.type.BigIntegerType@5ef6ae06
+Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@5ef6ae06
+Adding type registration string -> org.hibernate.type.StringType@604f2bd2
+Adding type registration java.lang.String -> org.hibernate.type.StringType@604f2bd2
+Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7b84fcf8
+Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6ad59d92
+Adding type registration url -> org.hibernate.type.UrlType@63dd899
+Adding type registration java.net.URL -> org.hibernate.type.UrlType@63dd899
+Adding type registration Duration -> org.hibernate.type.DurationType@34cdeda2
+Adding type registration java.time.Duration -> org.hibernate.type.DurationType@34cdeda2
+Adding type registration Instant -> org.hibernate.type.InstantType@28e8dde3
+Adding type registration java.time.Instant -> org.hibernate.type.InstantType@28e8dde3
+Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@17a1e4ca
+Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@17a1e4ca
+Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5669c5fb
+Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5669c5fb
+Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@112f364d
+Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@112f364d
+Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@542e560f
+Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@542e560f
+Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@35d08e6c
+Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@35d08e6c
+Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@59f63e24
+Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@59f63e24
+Adding type registration date -> org.hibernate.type.DateType@6ebf0f36
+Adding type registration java.sql.Date -> org.hibernate.type.DateType@6ebf0f36
+Adding type registration time -> org.hibernate.type.TimeType@2c532cd8
+Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2c532cd8
+Adding type registration timestamp -> org.hibernate.type.TimestampType@24d09c1
+Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@24d09c1
+Adding type registration java.util.Date -> org.hibernate.type.TimestampType@24d09c1
+Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2d1dee39
+Adding type registration calendar -> org.hibernate.type.CalendarType@674bd420
+Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@674bd420
+Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@674bd420
+Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2072acb2
+Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@6622fc65
+Adding type registration locale -> org.hibernate.type.LocaleType@6b00f608
+Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6b00f608
+Adding type registration currency -> org.hibernate.type.CurrencyType@4aa83f4f
+Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4aa83f4f
+Adding type registration timezone -> org.hibernate.type.TimeZoneType@ebb6851
+Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@ebb6851
+Adding type registration class -> org.hibernate.type.ClassType@3a6f2de3
+Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3a6f2de3
+Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@34f7234e
+Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@34f7234e
+Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@44e3a2b2
+Adding type registration binary -> org.hibernate.type.BinaryType@26bab2f1
+Adding type registration byte[] -> org.hibernate.type.BinaryType@26bab2f1
+Adding type registration [B -> org.hibernate.type.BinaryType@26bab2f1
+Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@424ebba3
+Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@424ebba3
+Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@424ebba3
+Adding type registration row_version -> org.hibernate.type.RowVersionType@3d97a632
+Adding type registration image -> org.hibernate.type.ImageType@7e5d9a50
+Adding type registration characters -> org.hibernate.type.CharArrayType@784c3487
+Adding type registration char[] -> org.hibernate.type.CharArrayType@784c3487
+Adding type registration [C -> org.hibernate.type.CharArrayType@784c3487
+Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@61c9c3fd
+Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@61c9c3fd
+Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@61c9c3fd
+Adding type registration text -> org.hibernate.type.TextType@302a07d
+Adding type registration ntext -> org.hibernate.type.NTextType@681a8b4e
+Adding type registration blob -> org.hibernate.type.BlobType@c2db68f
+Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@c2db68f
+Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@3668d4
+Adding type registration clob -> org.hibernate.type.ClobType@333dd51e
+Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@333dd51e
+Adding type registration nclob -> org.hibernate.type.NClobType@73173f63
+Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@73173f63
+Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3401a114
+Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3ecd267f
+Adding type registration serializable -> org.hibernate.type.SerializableType@3bd418e4
+Adding type registration object -> org.hibernate.type.ObjectType@3fb6cf60
+Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3fb6cf60
+Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4b9df8a
+Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@5e8ac0e1
+Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@aafcffa
+Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6955cb39
+Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@235a0c16
+Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@2b5f4d54
+Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5f7b97da
+Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@18b0930f
+Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://127.0.0.1:5432/tracker]
+HHH10001001: Connection properties: {password=password, user=postgres}
+HHH10001003: Autocommit mode: false
+Initializing Connection pool with 1 Connections
+HHH000115: Hibernate connection pool size: 1 (min=1)
+Database ->
+       name : PostgreSQL
+    version : 18.1
+      major : 18
+      minor : 1
+Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.7.3
+      major : 42
+      minor : 7
+JDBC version : 4.2
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+Normalizing identifier quoting [tracker]
+Normalizing identifier quoting [public]
+Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@58783f6c
+Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@58783f6c
+HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@34f7234e
+Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7577b641] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3704122f]
+Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+Binding entity from annotated class: ru.job4j.tracker.Item
+Normalizing identifier quoting [DTYPE]
+Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+Import with entity name Item
+Import: Item -> ru.job4j.tracker.Item
+Import: ru.job4j.tracker.Item -> ru.job4j.tracker.Item
+Normalizing identifier quoting [items]
+Normalizing identifier quoting [items]
+Bind entity ru.job4j.tracker.Item on table items
+Processing annotations of ru.job4j.tracker.Item.id
+Normalizing identifier quoting [id]
+Normalizing identifier quoting [id]
+Binding column: Ejb3Column{table=org.hibernate.mapping.Table(items), mappingColumn=id, insertable=true, updatable=true, unique=false}
+Not known whether passed class name [ru.job4j.tracker.Item] is safe
+No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.job4j.tracker.Item
+MetadataSourceProcessor property id with lazy=false
+Attempting to locate auto-apply AttributeConverter for property [ru.job4j.tracker.Item:id]
+building SimpleValue for id
+Normalizing identifier quoting [id]
+Normalizing identifier quoting [id]
+Normalizing identifier quoting [id]
+Building property id
+Cascading id with null
+#makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+Bind @Id on id
+Processing annotations of ru.job4j.tracker.Item.created
+Normalizing identifier quoting [created]
+Normalizing identifier quoting [created]
+Binding column: Ejb3Column{table=org.hibernate.mapping.Table(items), mappingColumn=created, insertable=true, updatable=true, unique=false}
+MetadataSourceProcessor property created with lazy=false
+Attempting to locate auto-apply AttributeConverter for property [ru.job4j.tracker.Item:created]
+building SimpleValue for created
+Normalizing identifier quoting [created]
+Normalizing identifier quoting [created]
+Normalizing identifier quoting [created]
+Building property created
+Cascading created with null
+Processing annotations of ru.job4j.tracker.Item.name
+Normalizing identifier quoting [name]
+Normalizing identifier quoting [name]
+Binding column: Ejb3Column{table=org.hibernate.mapping.Table(items), mappingColumn=name, insertable=true, updatable=true, unique=false}
+MetadataSourceProcessor property name with lazy=false
+Attempting to locate auto-apply AttributeConverter for property [ru.job4j.tracker.Item:name]
+building SimpleValue for name
+Normalizing identifier quoting [name]
+Normalizing identifier quoting [name]
+Normalizing identifier quoting [name]
+Building property name
+Cascading name with null
+Starting fillSimpleValue for id
+Starting fillSimpleValue for created
+Starting fillSimpleValue for name
+Forcing column [id] to be non-null as it is part of the primary key for table [items]
+Initializing service [role=org.hibernate.boot.spi.SessionFactoryBuilderService]
+Interpreting BatchFetchStyle from setting : null
+Initializing service [role=org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder]
+Initializing service [role=org.hibernate.bytecode.spi.BytecodeProvider]
+Building session factory
+SessionFactory name : null
+Automatic flush during beforeCompletion(): enabled
+Automatic session close at end of transaction: disabled
+Statistics: disabled
+Deleted entity synthetic identifier rollback: disabled
+Default entity-mode: pojo
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+Allow initialization of lazy state outside session : disabled
+Using BatchFetchStyle : LEGACY
+Default batch fetch size: -1
+Maximum outer join fetch depth: null
+Default null ordering: NONE
+Order SQL updates by primary key: disabled
+Order SQL inserts for batching: disabled
+multi-tenancy strategy : NONE
+JTA Track by Thread: enabled
+Query language substitutions: {}
+Named query checking : enabled
+Second-level cache: disabled
+Second-level query cache: disabled
+Second-level query cache factory: null
+Second-level cache region prefix: null
+Optimize second-level cache for minimal puts: disabled
+Structured second-level cache entries: disabled
+Second-level cache direct-reference entries: disabled
+Automatic eviction of collection cache: disabled
+JDBC batch size: 15
+JDBC batch updates for versioned data: enabled
+Scrollable result sets: enabled
+Wrap result sets: disabled
+JDBC3 getGeneratedKeys(): enabled
+JDBC result set fetch size: null
+Connection release mode: AFTER_TRANSACTION
+Generate SQL with comments: disabled
+JPA compliance - query : disabled
+JPA compliance - closed-handling : disabled
+JPA compliance - lists : disabled
+JPA compliance - transactions : disabled
+Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+Normalizing identifier quoting [null]
+Initializing service [role=org.hibernate.cache.spi.CacheImplementor]
+Session factory constructed with filter configurations : {}
+Instantiating session factory with properties: {java.specification.version=22, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.class.path=C:\projects\job4j_tracker\target\classes;C:\Users\corsair\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\corsair\.m2\repository\org\hibernate\hibernate-core\5.6.11.Final\hibernate-core-5.6.11.Final.jar;C:\Users\corsair\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\corsair\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\corsair\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\corsair\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\corsair\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\corsair\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\corsair\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\corsair\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\corsair\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\corsair\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\corsair\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\corsair\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\corsair\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\corsair\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\corsair\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\corsair\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\corsair\.m2\repository\org\liquibase\liquibase-core\4.28.0\liquibase-core-4.28.0.jar;C:\Users\corsair\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\corsair\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\corsair\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\corsair\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\corsair\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\corsair\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\corsair\.m2\repository\org\mapstruct\mapstruct\1.5.5.Final\mapstruct-1.5.5.Final.jar;C:\Users\corsair\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, java.vm.specification.version=22, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=RU, sun.boot.library.path=C:\Program Files\Java\jdk-22\bin, sun.java.command=ru.job4j.tracker.HibernateRun, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\corsair, user.language=ru, sun.stderr.encoding=UTF-8, java.specification.vendor=Oracle Corporation, java.version.date=2024-03-19, java.home=C:\Program Files\Java\jdk-22, file.separator=\, java.vm.compressedOopsMode=Zero based, sun.stdout.encoding=UTF-8, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=22+36-2370, user.name=corsair, stdout.encoding=UTF-8, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:postgresql://127.0.0.1:5432/tracker, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.current_session_context_class=thread, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\corsair\AppData\Local\Temp\, java.version=22, user.dir=C:\projects\job4j_tracker, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@1eaf1e62, native.encoding=Cp1251, java.library.path=C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Git\cmd;%JAVA_HOME%\bin;%M2_HOME%\bin;C:\Users\corsair\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.5\bin;C:\Program Files\Java\jdk-22\bin;C:\Tools\apache-maven-3.9.11\bin;C:\Program Files\PostgreSQL\18\bin;;., stderr.encoding=UTF-8, java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=22+36-2370, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.pool_size=1, java.class.version=66.0}
+Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+Skipping JACC integration as it was not enabled
+Instantiated session factory
+Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7577b641] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@588cd519]
+Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+Initializing service [role=org.hibernate.property.access.spi.PropertyAccessStrategyResolver]
+Not known whether passed class name [ru.job4j.tracker.Item] is safe
+No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.job4j.tracker.Item
+Initializing service [role=org.hibernate.bytecode.spi.ProxyFactoryFactory]
+Skipping duplicate registration of path [created], existing type = [org.hibernate.type.LocalDateTimeType@17a1e4ca], incoming type = [org.hibernate.type.LocalDateTimeType@17a1e4ca]
+Skipping duplicate registration of path [name], existing type = [org.hibernate.type.StringType@604f2bd2], incoming type = [org.hibernate.type.StringType@604f2bd2]
+Skipping duplicate registration of path [id], existing type = [org.hibernate.type.IntegerType@63a270c9], incoming type = [org.hibernate.type.IntegerType@63a270c9]
+Static SQL for entity: ru.job4j.tracker.Item
+ Version select: select id from items where id =?
+ Snapshot select: select item_.id, item_.created as created2_0_, item_.name as name3_0_ from items item_ where item_.id=?
+ Insert 0: insert into items (created, name, id) values (?, ?, ?)
+ Update 0: update items set created=?, name=? where id=?
+ Delete 0: delete from items where id=?
+ Identity insert: insert into items (created, name) values (?, ?)
+ Starting root entity : ru.job4j.tracker.Item
+Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@75961f16]
+Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@3bddc676
+.. Registering AssociationKey : AssociationKey(table=items, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@3bddc676
+>> Starting entity identifier : ru.job4j.tracker.Item
+Visiting attribute path : created
+>> Starting attribute Attribute(name=created, type=LocalDateTime [non-identifier])
+<< Finishing up attribute : Attribute(name=created, type=LocalDateTime [non-identifier])
+Visiting attribute path : name
+>> Starting attribute Attribute(name=name, type=string [non-identifier])
+<< Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@3bddc676
+ Finished root entity : ru.job4j.tracker.Item
+Building LoadPlan...
+processing queryspace <gen:0>
+LoadPlan(entity=ru.job4j.tracker.Item)
+    - Returns
+       - EntityReturnImpl(entity=ru.job4j.tracker.Item, querySpaceUid=<gen:0>, path=ru.job4j.tracker.Item)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.job4j.tracker.Item)
+          - SQL table alias mapping - item0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+Static select for entity ru.job4j.tracker.Item [NONE]: select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=?
+Wrapping up metadata context...
+Starting entity [ru.job4j.tracker.Item]
+Building identifier attribute [Item.id]
+Starting attribute metadata determination [id]
+    Determined member [private java.lang.Integer ru.job4j.tracker.Item.id]
+    Determined type [name=integer, class=org.hibernate.type.IntegerType]
+Building attribute [Item.created]
+Starting attribute metadata determination [created]
+    Determined member [private java.time.LocalDateTime ru.job4j.tracker.Item.created]
+    Determined type [name=LocalDateTime, class=org.hibernate.type.LocalDateTimeType]
+Building attribute [Item.name]
+Starting attribute metadata determination [name]
+    Determined member [private java.lang.String ru.job4j.tracker.Item.name]
+    Determined type [name=string, class=org.hibernate.type.StringType]
+Completed entity [ru.job4j.tracker.Item]
+No schema actions specified
+No actions specified; doing nothing
+Checking 0 named HQL queries
+Checking 0 named SQL queries
+EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@588cd519] for TypeConfiguration
+Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@712cfb63
+Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+Registering SessionFactory: afc9717f-5b05-41b3-bfda-ab733fde0dc0 (<unnamed>)
+Not binding SessionFactory to JNDI, no JNDI name configured
+Opening Hibernate Session.  tenant=null
+Initializing service [role=org.hibernate.stat.spi.StatisticsImplementor]
+Statistics initialized [enabled=false]
+Initializing service [role=org.hibernate.jmx.spi.JmxService]
+Opened Session [2a419903-63f1-4374-bceb-5a2d09aaa6d4] at timestamp: 1771777199456
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Saving transient instance
+Saving [ru.job4j.tracker.Item#<null>]
+Adding an EntityIdentityInsertAction for [ru.job4j.tracker.Item] object
+Executing inserts before finding non-nullable transient entities for early insert: [EntityIdentityInsertAction[ru.job4j.tracker.Item#<null>]]
+Adding insert with no non-nullable, transient entities: [EntityIdentityInsertAction[ru.job4j.tracker.Item#<null>]]
+Executing insertions before resolved early-insert
+Executing identity-insert immediately
+Inserting entity: ru.job4j.tracker.Item (native id)
+insert into items (created, name) values (?, ?)
+Registering statement [insert into items (created, name) values (?, ?)
+RETURNING *]
+Dehydrating entity: [ru.job4j.tracker.Item#<null>]
+binding parameter [1] as [TIMESTAMP] - [2026-02-22T19:19:59.434735800]
+binding parameter [2] as [VARCHAR] - [Learn Hibernate]
+Natively generated identity: 1
+Releasing result set [org.postgresql.jdbc.PgResultSet@5b3bb1f7]
+Closing result set [org.postgresql.jdbc.PgResultSet@5b3bb1f7]
+Releasing statement [insert into items (created, name) values (('2026-02-22 19:19:59.434736+03'), ('Learn Hibernate'))
+RETURNING *]
+HHH000387: ResultSet's statement was not registered
+Closing prepared statement [insert into items (created, name) values (('2026-02-22 19:19:59.434736+03'), ('Learn Hibernate'))
+RETURNING *]
+Starting after statement execution processing [AFTER_TRANSACTION]
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+Flushing session
+Processing flush-time cascades
+Dirty checking collections
+Flushing entities and processing referenced collections
+Processing unreferenced collections
+Scheduling collection removes/(re)creates/updates
+Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+Listing entities:
+ru.job4j.tracker.Item{created=2026-02-22T19:19:59.434735800, name=Learn Hibernate, id=1}
+Executing flush
+Starting after statement execution processing [AFTER_TRANSACTION]
+Post flush
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [2a419903-63f1-4374-bceb-5a2d09aaa6d4]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@196ae579]
+Releasing JDBC resources
+Closing logical connection
+Logical connection closed
+Opening Hibernate Session.  tenant=null
+Opened Session [e9c7bc64-e934-49f2-ae2e-5dfe441fe665] at timestamp: 1771777199549
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Updating detached instance
+Updating [ru.job4j.tracker.Item#1]
+Updating [ru.job4j.tracker.Item#1]
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+Flushing session
+Processing flush-time cascades
+Dirty checking collections
+Flushing entities and processing referenced collections
+Updating entity: [ru.job4j.tracker.Item#1]
+Processing unreferenced collections
+Scheduling collection removes/(re)creates/updates
+Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+Listing entities:
+ru.job4j.tracker.Item{created=2026-02-22T19:19:59.434735800, name=Learn Hibernate 5., id=1}
+Executing flush
+Updating entity: [ru.job4j.tracker.Item#1]
+Initializing service [role=org.hibernate.engine.jdbc.batch.spi.BatchBuilder]
+Starting after statement execution processing [AFTER_TRANSACTION]
+update items set created=?, name=? where id=?
+Registering statement [update items set created=?, name=? where id=?]
+Dehydrating entity: [ru.job4j.tracker.Item#1]
+binding parameter [1] as [TIMESTAMP] - [2026-02-22T19:19:59.434735800]
+binding parameter [2] as [VARCHAR] - [Learn Hibernate 5.]
+binding parameter [3] as [INTEGER] - [1]
+Releasing statement [update items set created=('2026-02-22 19:19:59.434736+03'), name=('Learn Hibernate 5.') where id=('1'::int4)]
+Closing prepared statement [update items set created=('2026-02-22 19:19:59.434736+03'), name=('Learn Hibernate 5.') where id=('1'::int4)]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Post flush
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [e9c7bc64-e934-49f2-ae2e-5dfe441fe665]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@4afbb6c2]
+HHH000420: Closing un-released batch
+Starting after statement execution processing [AFTER_TRANSACTION]
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Closing logical connection
+Logical connection closed
+Opening Hibernate Session.  tenant=null
+Opened Session [5ebdc981-ec35-4bf3-91e1-d14e4728532d] at timestamp: 1771777199563
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Loading entity: [ru.job4j.tracker.Item#1]
+Attempting to resolve: [ru.job4j.tracker.Item#1]
+Object not resolved in any cache: [ru.job4j.tracker.Item#1]
+Fetching entity: [ru.job4j.tracker.Item#1]
+select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=?
+Registering statement [select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=?]
+Registering last query statement [select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=?]
+binding parameter [1] as [INTEGER] - [1]
+Bound [2] parameters total
+Registering result set [org.postgresql.jdbc.PgResultSet@423c5404]
+Processing result set
+Starting ResultSet row #0
+On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+hydrating entity state
+Initializing object from ResultSet: [ru.job4j.tracker.Item#1]
+Hydrating entity: [ru.job4j.tracker.Item#1]
+extracted value ([created2_0_0_] : [TIMESTAMP]) - [2026-02-22T19:19:59.434736]
+extracted value ([name3_0_0_] : [VARCHAR]) - [Learn Hibernate 5.]
+Done processing result set (1 rows)
+Total objects hydrated: 1
+Resolving attributes for [ru.job4j.tracker.Item#1]
+Processing attribute `created` : value = 2026-02-22T19:19:59.434736
+Attribute (`created`)  - enhanced for lazy-loading? - false
+Processing attribute `name` : value = Learn Hibernate 5.
+Attribute (`name`)  - enhanced for lazy-loading? - false
+Done materializing entity [ru.job4j.tracker.Item#1]
+Skipping create subselects because there are fewer than 2 results, so query by key is more efficient.
+Releasing statement [select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=('1'::int4)]
+Closing result set [org.postgresql.jdbc.PgResultSet@423c5404]
+Closing prepared statement [select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=('1'::int4)]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initializing non-lazy collections
+Done entity load : ru.job4j.tracker.Item#1
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+Flushing session
+Processing flush-time cascades
+Dirty checking collections
+Flushing entities and processing referenced collections
+Processing unreferenced collections
+Scheduling collection removes/(re)creates/updates
+Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+Listing entities:
+ru.job4j.tracker.Item{created=2026-02-22T19:19:59.434736, name=Learn Hibernate 5., id=1}
+Executing flush
+Starting after statement execution processing [AFTER_TRANSACTION]
+Post flush
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [5ebdc981-ec35-4bf3-91e1-d14e4728532d]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@490c7a83]
+Releasing JDBC resources
+Closing logical connection
+Logical connection closed
+Opening Hibernate Session.  tenant=null
+Opened Session [559b6720-06ed-4fdc-a813-c6e0bb2c05ef] at timestamp: 1771777199581
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Entity was not persistent in delete processing
+ID unsaved-value: null
+Deleting [ru.job4j.tracker.Item#1]
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+Flushing session
+Processing flush-time cascades
+Dirty checking collections
+Flushing entities and processing referenced collections
+Processing unreferenced collections
+Scheduling collection removes/(re)creates/updates
+Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+Listing entities:
+ru.job4j.tracker.Item{created=2026-02-22T19:19:59.581720600, name=null, id=1}
+Executing flush
+Deleting entity: [ru.job4j.tracker.Item#1]
+Starting after statement execution processing [AFTER_TRANSACTION]
+delete from items where id=?
+Registering statement [delete from items where id=?]
+binding parameter [1] as [INTEGER] - [1]
+Releasing statement [delete from items where id=('1'::int4)]
+Closing prepared statement [delete from items where id=('1'::int4)]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Post flush
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [559b6720-06ed-4fdc-a813-c6e0bb2c05ef]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@4c447c09]
+HHH000420: Closing un-released batch
+Starting after statement execution processing [AFTER_TRANSACTION]
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Closing logical connection
+Logical connection closed
+Opening Hibernate Session.  tenant=null
+Opened Session [6e15cb53-83da-4112-a2d6-dcf77ddda023] at timestamp: 1771777199587
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Unable to locate HQL query plan in cache; generating (FROM Item)
+Initializing service [role=org.hibernate.hql.spi.QueryTranslatorFactory]
+QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7cdbaa50
+parse() - HQL: FROM ru.job4j.tracker.Item
+-> statement
+---> selectStatement
+-----> queryRule
+-------> selectFrom
+---------> fromClause
+-----------> fromRange
+-------------> fromClassOrOuterQueryPath
+---------------> path
+-----------------> identifier
+<----------------- identifier
+-----------------> identifier
+<----------------- identifier
+-----------------> identifier
+<----------------- identifier
+-----------------> identifier
+<----------------- identifier
+<--------------- path
+<------------- fromClassOrOuterQueryPath
+<----------- fromRange
+<--------- fromClause
+<------- selectFrom
+<----- queryRule
+<--- selectStatement
+<- statement
+throwQueryException() : no errors
+--- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'FROM'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[IDENT] Node: 'ru'
+                |  |  \-[IDENT] Node: 'job4j'
+                |  \-[IDENT] Node: 'tracker'
+                \-[IDENT] Node: 'Item'
+
+select << begin [level=1, statement=select]
+FromClause{level=1} : ru.job4j.tracker.Item (<no alias>) -> item0_
+select : finishing up [level=1, statement=select]
+processQuery() :  ( SELECT ( FromClause{level=1} items item0_ ) )
+Derived SELECT clause created.
+Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Item): [items]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(ru.job4j.tracker.Item)
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+Using FROM fragment [items item0_]
+select >> end [level=1, statement=select]
+--- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (items)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'item0_.id as id1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=items,tableAlias=item0_,origin=null,columns={,className=ru.job4j.tracker.Item}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'item0_.created as created2_0_, item0_.name as name3_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[item0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'items item0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=items,tableAlias=item0_,origin=null,columns={,className=ru.job4j.tracker.Item}}
+
+throwQueryException() : no errors
+HQL: FROM ru.job4j.tracker.Item
+SQL: select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_
+throwQueryException() : no errors
+Find: FROM Item
+Named parameters: {}
+select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_
+Registering statement [select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_]
+Registering last query statement [select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_]
+Bound [1] parameters total
+Registering result set [org.postgresql.jdbc.PgResultSet@17aa8a11]
+Processing result set
+Done processing result set (0 rows)
+Total objects hydrated: 0
+Releasing statement [select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_]
+Closing result set [org.postgresql.jdbc.PgResultSet@17aa8a11]
+Closing prepared statement [select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initializing non-lazy collections
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [6e15cb53-83da-4112-a2d6-dcf77ddda023]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@7ce85af2]
+Releasing JDBC resources
+Closing logical connection
+Logical connection closed
+HHH10001008: Cleaning up connection pool [jdbc:postgresql://127.0.0.1:5432/tracker]
+Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+Logging Provider: org.jboss.logging.Log4jLoggerProvider
+Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+HHH000412: Hibernate ORM core version 5.6.11.Final
+HHH000206: hibernate.properties not found
+trying via [new URL("hibernate.cfg.xml")]
+trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+In resolveEntity(-//Hibernate/Hibernate Configuration DTD 3.0//EN, http://hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD 3.0//EN] - [http://hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+Recognized alternate hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+Adding type registration boolean -> org.hibernate.type.BooleanType@635572a7
+Adding type registration boolean -> org.hibernate.type.BooleanType@635572a7
+Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@635572a7
+Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@7a1a3478
+Adding type registration true_false -> org.hibernate.type.TrueFalseType@93cf163
+Adding type registration yes_no -> org.hibernate.type.YesNoType@4b6690c0
+Adding type registration byte -> org.hibernate.type.ByteType@66565121
+Adding type registration byte -> org.hibernate.type.ByteType@66565121
+Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@66565121
+Adding type registration character -> org.hibernate.type.CharacterType@49c6c24f
+Adding type registration char -> org.hibernate.type.CharacterType@49c6c24f
+Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@49c6c24f
+Adding type registration short -> org.hibernate.type.ShortType@5d5f10b2
+Adding type registration short -> org.hibernate.type.ShortType@5d5f10b2
+Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5d5f10b2
+Adding type registration integer -> org.hibernate.type.IntegerType@63a270c9
+Adding type registration int -> org.hibernate.type.IntegerType@63a270c9
+Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@63a270c9
+Adding type registration long -> org.hibernate.type.LongType@73a2e526
+Adding type registration long -> org.hibernate.type.LongType@73a2e526
+Adding type registration java.lang.Long -> org.hibernate.type.LongType@73a2e526
+Adding type registration float -> org.hibernate.type.FloatType@69653e16
+Adding type registration float -> org.hibernate.type.FloatType@69653e16
+Adding type registration java.lang.Float -> org.hibernate.type.FloatType@69653e16
+Adding type registration double -> org.hibernate.type.DoubleType@604c5de8
+Adding type registration double -> org.hibernate.type.DoubleType@604c5de8
+Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@604c5de8
+Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@584f54e6
+Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@584f54e6
+Adding type registration big_integer -> org.hibernate.type.BigIntegerType@5ef6ae06
+Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@5ef6ae06
+Adding type registration string -> org.hibernate.type.StringType@604f2bd2
+Adding type registration java.lang.String -> org.hibernate.type.StringType@604f2bd2
+Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7b84fcf8
+Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6ad59d92
+Adding type registration url -> org.hibernate.type.UrlType@63dd899
+Adding type registration java.net.URL -> org.hibernate.type.UrlType@63dd899
+Adding type registration Duration -> org.hibernate.type.DurationType@34cdeda2
+Adding type registration java.time.Duration -> org.hibernate.type.DurationType@34cdeda2
+Adding type registration Instant -> org.hibernate.type.InstantType@28e8dde3
+Adding type registration java.time.Instant -> org.hibernate.type.InstantType@28e8dde3
+Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@17a1e4ca
+Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@17a1e4ca
+Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5669c5fb
+Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5669c5fb
+Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@112f364d
+Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@112f364d
+Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@542e560f
+Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@542e560f
+Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@35d08e6c
+Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@35d08e6c
+Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@59f63e24
+Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@59f63e24
+Adding type registration date -> org.hibernate.type.DateType@6ebf0f36
+Adding type registration java.sql.Date -> org.hibernate.type.DateType@6ebf0f36
+Adding type registration time -> org.hibernate.type.TimeType@2c532cd8
+Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2c532cd8
+Adding type registration timestamp -> org.hibernate.type.TimestampType@24d09c1
+Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@24d09c1
+Adding type registration java.util.Date -> org.hibernate.type.TimestampType@24d09c1
+Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2d1dee39
+Adding type registration calendar -> org.hibernate.type.CalendarType@674bd420
+Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@674bd420
+Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@674bd420
+Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2072acb2
+Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@6622fc65
+Adding type registration locale -> org.hibernate.type.LocaleType@6b00f608
+Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6b00f608
+Adding type registration currency -> org.hibernate.type.CurrencyType@4aa83f4f
+Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4aa83f4f
+Adding type registration timezone -> org.hibernate.type.TimeZoneType@ebb6851
+Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@ebb6851
+Adding type registration class -> org.hibernate.type.ClassType@3a6f2de3
+Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3a6f2de3
+Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@34f7234e
+Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@34f7234e
+Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@44e3a2b2
+Adding type registration binary -> org.hibernate.type.BinaryType@26bab2f1
+Adding type registration byte[] -> org.hibernate.type.BinaryType@26bab2f1
+Adding type registration [B -> org.hibernate.type.BinaryType@26bab2f1
+Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@424ebba3
+Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@424ebba3
+Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@424ebba3
+Adding type registration row_version -> org.hibernate.type.RowVersionType@3d97a632
+Adding type registration image -> org.hibernate.type.ImageType@7e5d9a50
+Adding type registration characters -> org.hibernate.type.CharArrayType@784c3487
+Adding type registration char[] -> org.hibernate.type.CharArrayType@784c3487
+Adding type registration [C -> org.hibernate.type.CharArrayType@784c3487
+Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@61c9c3fd
+Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@61c9c3fd
+Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@61c9c3fd
+Adding type registration text -> org.hibernate.type.TextType@302a07d
+Adding type registration ntext -> org.hibernate.type.NTextType@681a8b4e
+Adding type registration blob -> org.hibernate.type.BlobType@c2db68f
+Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@c2db68f
+Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@3668d4
+Adding type registration clob -> org.hibernate.type.ClobType@333dd51e
+Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@333dd51e
+Adding type registration nclob -> org.hibernate.type.NClobType@73173f63
+Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@73173f63
+Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3401a114
+Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3ecd267f
+Adding type registration serializable -> org.hibernate.type.SerializableType@3bd418e4
+Adding type registration object -> org.hibernate.type.ObjectType@3fb6cf60
+Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3fb6cf60
+Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4b9df8a
+Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@5e8ac0e1
+Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@aafcffa
+Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6955cb39
+Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@235a0c16
+Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@2b5f4d54
+Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5f7b97da
+Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@18b0930f
+Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://127.0.0.1:5432/tracker]
+HHH10001001: Connection properties: {password=password, user=postgres}
+HHH10001003: Autocommit mode: false
+Initializing Connection pool with 1 Connections
+HHH000115: Hibernate connection pool size: 1 (min=1)
+Database ->
+       name : PostgreSQL
+    version : 18.1
+      major : 18
+      minor : 1
+Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.7.3
+      major : 42
+      minor : 7
+JDBC version : 4.2
+HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+Normalizing identifier quoting [tracker]
+Normalizing identifier quoting [public]
+Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@58783f6c
+Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@58783f6c
+HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@34f7234e
+Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7577b641] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3704122f]
+Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+Binding entity from annotated class: ru.job4j.tracker.Item
+Normalizing identifier quoting [DTYPE]
+Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+Import with entity name Item
+Import: Item -> ru.job4j.tracker.Item
+Import: ru.job4j.tracker.Item -> ru.job4j.tracker.Item
+Normalizing identifier quoting [items]
+Normalizing identifier quoting [items]
+Bind entity ru.job4j.tracker.Item on table items
+Processing annotations of ru.job4j.tracker.Item.id
+Normalizing identifier quoting [id]
+Normalizing identifier quoting [id]
+Binding column: Ejb3Column{table=org.hibernate.mapping.Table(items), mappingColumn=id, insertable=true, updatable=true, unique=false}
+Not known whether passed class name [ru.job4j.tracker.Item] is safe
+No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.job4j.tracker.Item
+MetadataSourceProcessor property id with lazy=false
+Attempting to locate auto-apply AttributeConverter for property [ru.job4j.tracker.Item:id]
+building SimpleValue for id
+Normalizing identifier quoting [id]
+Normalizing identifier quoting [id]
+Normalizing identifier quoting [id]
+Building property id
+Cascading id with null
+#makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+Bind @Id on id
+Processing annotations of ru.job4j.tracker.Item.created
+Normalizing identifier quoting [created]
+Normalizing identifier quoting [created]
+Binding column: Ejb3Column{table=org.hibernate.mapping.Table(items), mappingColumn=created, insertable=true, updatable=true, unique=false}
+MetadataSourceProcessor property created with lazy=false
+Attempting to locate auto-apply AttributeConverter for property [ru.job4j.tracker.Item:created]
+building SimpleValue for created
+Normalizing identifier quoting [created]
+Normalizing identifier quoting [created]
+Normalizing identifier quoting [created]
+Building property created
+Cascading created with null
+Processing annotations of ru.job4j.tracker.Item.name
+Normalizing identifier quoting [name]
+Normalizing identifier quoting [name]
+Binding column: Ejb3Column{table=org.hibernate.mapping.Table(items), mappingColumn=name, insertable=true, updatable=true, unique=false}
+MetadataSourceProcessor property name with lazy=false
+Attempting to locate auto-apply AttributeConverter for property [ru.job4j.tracker.Item:name]
+building SimpleValue for name
+Normalizing identifier quoting [name]
+Normalizing identifier quoting [name]
+Normalizing identifier quoting [name]
+Building property name
+Cascading name with null
+Starting fillSimpleValue for id
+Starting fillSimpleValue for created
+Starting fillSimpleValue for name
+Forcing column [id] to be non-null as it is part of the primary key for table [items]
+Initializing service [role=org.hibernate.boot.spi.SessionFactoryBuilderService]
+Interpreting BatchFetchStyle from setting : null
+Initializing service [role=org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder]
+Initializing service [role=org.hibernate.bytecode.spi.BytecodeProvider]
+Building session factory
+SessionFactory name : null
+Automatic flush during beforeCompletion(): enabled
+Automatic session close at end of transaction: disabled
+Statistics: disabled
+Deleted entity synthetic identifier rollback: disabled
+Default entity-mode: pojo
+Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+Allow initialization of lazy state outside session : disabled
+Using BatchFetchStyle : LEGACY
+Default batch fetch size: -1
+Maximum outer join fetch depth: null
+Default null ordering: NONE
+Order SQL updates by primary key: disabled
+Order SQL inserts for batching: disabled
+multi-tenancy strategy : NONE
+JTA Track by Thread: enabled
+Query language substitutions: {}
+Named query checking : enabled
+Second-level cache: disabled
+Second-level query cache: disabled
+Second-level query cache factory: null
+Second-level cache region prefix: null
+Optimize second-level cache for minimal puts: disabled
+Structured second-level cache entries: disabled
+Second-level cache direct-reference entries: disabled
+Automatic eviction of collection cache: disabled
+JDBC batch size: 15
+JDBC batch updates for versioned data: enabled
+Scrollable result sets: enabled
+Wrap result sets: disabled
+JDBC3 getGeneratedKeys(): enabled
+JDBC result set fetch size: null
+Connection release mode: AFTER_TRANSACTION
+Generate SQL with comments: disabled
+JPA compliance - query : disabled
+JPA compliance - closed-handling : disabled
+JPA compliance - lists : disabled
+JPA compliance - transactions : disabled
+Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+Normalizing identifier quoting [null]
+Initializing service [role=org.hibernate.cache.spi.CacheImplementor]
+Session factory constructed with filter configurations : {}
+Instantiating session factory with properties: {java.specification.version=22, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.class.path=C:\projects\job4j_tracker\target\classes;C:\Users\corsair\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\corsair\.m2\repository\org\hibernate\hibernate-core\5.6.11.Final\hibernate-core-5.6.11.Final.jar;C:\Users\corsair\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\corsair\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\corsair\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\corsair\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\corsair\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\corsair\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\corsair\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\corsair\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\corsair\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\corsair\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\corsair\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\corsair\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\corsair\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\corsair\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\corsair\.m2\repository\org\postgresql\postgresql\42.7.3\postgresql-42.7.3.jar;C:\Users\corsair\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\corsair\.m2\repository\org\liquibase\liquibase-core\4.28.0\liquibase-core-4.28.0.jar;C:\Users\corsair\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\corsair\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\corsair\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\corsair\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\corsair\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\corsair\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\corsair\.m2\repository\org\mapstruct\mapstruct\1.5.5.Final\mapstruct-1.5.5.Final.jar;C:\Users\corsair\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, java.vm.specification.version=22, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=RU, sun.boot.library.path=C:\Program Files\Java\jdk-22\bin, sun.java.command=ru.job4j.tracker.HibernateRun, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\corsair, user.language=ru, sun.stderr.encoding=UTF-8, java.specification.vendor=Oracle Corporation, java.version.date=2024-03-19, java.home=C:\Program Files\Java\jdk-22, file.separator=\, java.vm.compressedOopsMode=Zero based, sun.stdout.encoding=UTF-8, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=22+36-2370, user.name=corsair, stdout.encoding=UTF-8, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:postgresql://127.0.0.1:5432/tracker, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.current_session_context_class=thread, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\corsair\AppData\Local\Temp\, java.version=22, user.dir=C:\projects\job4j_tracker, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@1eaf1e62, native.encoding=Cp1251, java.library.path=C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Git\cmd;%JAVA_HOME%\bin;%M2_HOME%\bin;C:\Users\corsair\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.2.5\bin;C:\Program Files\Java\jdk-22\bin;C:\Tools\apache-maven-3.9.11\bin;C:\Program Files\PostgreSQL\18\bin;;., stderr.encoding=UTF-8, java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=22+36-2370, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.pool_size=1, java.class.version=66.0}
+Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+Skipping JACC integration as it was not enabled
+Instantiated session factory
+Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7577b641] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@588cd519]
+Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+Initializing service [role=org.hibernate.property.access.spi.PropertyAccessStrategyResolver]
+Not known whether passed class name [ru.job4j.tracker.Item] is safe
+No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.job4j.tracker.Item
+Initializing service [role=org.hibernate.bytecode.spi.ProxyFactoryFactory]
+Skipping duplicate registration of path [created], existing type = [org.hibernate.type.LocalDateTimeType@17a1e4ca], incoming type = [org.hibernate.type.LocalDateTimeType@17a1e4ca]
+Skipping duplicate registration of path [name], existing type = [org.hibernate.type.StringType@604f2bd2], incoming type = [org.hibernate.type.StringType@604f2bd2]
+Skipping duplicate registration of path [id], existing type = [org.hibernate.type.IntegerType@63a270c9], incoming type = [org.hibernate.type.IntegerType@63a270c9]
+Static SQL for entity: ru.job4j.tracker.Item
+ Version select: select id from items where id =?
+ Snapshot select: select item_.id, item_.created as created2_0_, item_.name as name3_0_ from items item_ where item_.id=?
+ Insert 0: insert into items (created, name, id) values (?, ?, ?)
+ Update 0: update items set created=?, name=? where id=?
+ Delete 0: delete from items where id=?
+ Identity insert: insert into items (created, name) values (?, ?)
+ Starting root entity : ru.job4j.tracker.Item
+Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@75961f16]
+Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@3bddc676
+.. Registering AssociationKey : AssociationKey(table=items, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@3bddc676
+>> Starting entity identifier : ru.job4j.tracker.Item
+Visiting attribute path : created
+>> Starting attribute Attribute(name=created, type=LocalDateTime [non-identifier])
+<< Finishing up attribute : Attribute(name=created, type=LocalDateTime [non-identifier])
+Visiting attribute path : name
+>> Starting attribute Attribute(name=name, type=string [non-identifier])
+<< Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@3bddc676
+ Finished root entity : ru.job4j.tracker.Item
+Building LoadPlan...
+processing queryspace <gen:0>
+LoadPlan(entity=ru.job4j.tracker.Item)
+    - Returns
+       - EntityReturnImpl(entity=ru.job4j.tracker.Item, querySpaceUid=<gen:0>, path=ru.job4j.tracker.Item)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.job4j.tracker.Item)
+          - SQL table alias mapping - item0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+Static select for entity ru.job4j.tracker.Item [NONE]: select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=?
+Wrapping up metadata context...
+Starting entity [ru.job4j.tracker.Item]
+Building identifier attribute [Item.id]
+Starting attribute metadata determination [id]
+    Determined member [private java.lang.Integer ru.job4j.tracker.Item.id]
+    Determined type [name=integer, class=org.hibernate.type.IntegerType]
+Building attribute [Item.created]
+Starting attribute metadata determination [created]
+    Determined member [private java.time.LocalDateTime ru.job4j.tracker.Item.created]
+    Determined type [name=LocalDateTime, class=org.hibernate.type.LocalDateTimeType]
+Building attribute [Item.name]
+Starting attribute metadata determination [name]
+    Determined member [private java.lang.String ru.job4j.tracker.Item.name]
+    Determined type [name=string, class=org.hibernate.type.StringType]
+Completed entity [ru.job4j.tracker.Item]
+No schema actions specified
+No actions specified; doing nothing
+Checking 0 named HQL queries
+Checking 0 named SQL queries
+EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@588cd519] for TypeConfiguration
+Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@712cfb63
+Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+Registering SessionFactory: 3a04dcfb-3bea-4d23-89ee-d308d278d221 (<unnamed>)
+Not binding SessionFactory to JNDI, no JNDI name configured
+Opening Hibernate Session.  tenant=null
+Initializing service [role=org.hibernate.stat.spi.StatisticsImplementor]
+Statistics initialized [enabled=false]
+Initializing service [role=org.hibernate.jmx.spi.JmxService]
+Opened Session [4b6c519f-e18b-4f4f-b015-b3a070750b88] at timestamp: 1771777564033
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Saving transient instance
+Saving [ru.job4j.tracker.Item#<null>]
+Adding an EntityIdentityInsertAction for [ru.job4j.tracker.Item] object
+Executing inserts before finding non-nullable transient entities for early insert: [EntityIdentityInsertAction[ru.job4j.tracker.Item#<null>]]
+Adding insert with no non-nullable, transient entities: [EntityIdentityInsertAction[ru.job4j.tracker.Item#<null>]]
+Executing insertions before resolved early-insert
+Executing identity-insert immediately
+Inserting entity: ru.job4j.tracker.Item (native id)
+insert into items (created, name) values (?, ?)
+Registering statement [insert into items (created, name) values (?, ?)
+RETURNING *]
+Dehydrating entity: [ru.job4j.tracker.Item#<null>]
+binding parameter [1] as [TIMESTAMP] - [2026-02-22T19:26:04.011290900]
+binding parameter [2] as [VARCHAR] - [Learn Hibernate]
+Natively generated identity: 3
+Releasing result set [org.postgresql.jdbc.PgResultSet@5b3bb1f7]
+Closing result set [org.postgresql.jdbc.PgResultSet@5b3bb1f7]
+Releasing statement [insert into items (created, name) values (('2026-02-22 19:26:04.011291+03'), ('Learn Hibernate'))
+RETURNING *]
+HHH000387: ResultSet's statement was not registered
+Closing prepared statement [insert into items (created, name) values (('2026-02-22 19:26:04.011291+03'), ('Learn Hibernate'))
+RETURNING *]
+Starting after statement execution processing [AFTER_TRANSACTION]
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+Flushing session
+Processing flush-time cascades
+Dirty checking collections
+Flushing entities and processing referenced collections
+Processing unreferenced collections
+Scheduling collection removes/(re)creates/updates
+Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+Listing entities:
+ru.job4j.tracker.Item{created=2026-02-22T19:26:04.011290900, name=Learn Hibernate, id=3}
+Executing flush
+Starting after statement execution processing [AFTER_TRANSACTION]
+Post flush
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [4b6c519f-e18b-4f4f-b015-b3a070750b88]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@196ae579]
+Releasing JDBC resources
+Closing logical connection
+Logical connection closed
+Opening Hibernate Session.  tenant=null
+Opened Session [61c7adf2-9a6a-443d-b9be-5ae4d8061bad] at timestamp: 1771777564134
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Updating detached instance
+Updating [ru.job4j.tracker.Item#3]
+Updating [ru.job4j.tracker.Item#3]
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+Flushing session
+Processing flush-time cascades
+Dirty checking collections
+Flushing entities and processing referenced collections
+Updating entity: [ru.job4j.tracker.Item#3]
+Processing unreferenced collections
+Scheduling collection removes/(re)creates/updates
+Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+Listing entities:
+ru.job4j.tracker.Item{created=2026-02-22T19:26:04.011290900, name=Learn Hibernate 5., id=3}
+Executing flush
+Updating entity: [ru.job4j.tracker.Item#3]
+Initializing service [role=org.hibernate.engine.jdbc.batch.spi.BatchBuilder]
+Starting after statement execution processing [AFTER_TRANSACTION]
+update items set created=?, name=? where id=?
+Registering statement [update items set created=?, name=? where id=?]
+Dehydrating entity: [ru.job4j.tracker.Item#3]
+binding parameter [1] as [TIMESTAMP] - [2026-02-22T19:26:04.011290900]
+binding parameter [2] as [VARCHAR] - [Learn Hibernate 5.]
+binding parameter [3] as [INTEGER] - [3]
+Releasing statement [update items set created=('2026-02-22 19:26:04.011291+03'), name=('Learn Hibernate 5.') where id=('3'::int4)]
+Closing prepared statement [update items set created=('2026-02-22 19:26:04.011291+03'), name=('Learn Hibernate 5.') where id=('3'::int4)]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Post flush
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [61c7adf2-9a6a-443d-b9be-5ae4d8061bad]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@4afbb6c2]
+HHH000420: Closing un-released batch
+Starting after statement execution processing [AFTER_TRANSACTION]
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Closing logical connection
+Logical connection closed
+Opening Hibernate Session.  tenant=null
+Opened Session [8fb21b0c-b478-4295-99f5-6fb445dbce3a] at timestamp: 1771777564152
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Loading entity: [ru.job4j.tracker.Item#3]
+Attempting to resolve: [ru.job4j.tracker.Item#3]
+Object not resolved in any cache: [ru.job4j.tracker.Item#3]
+Fetching entity: [ru.job4j.tracker.Item#3]
+select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=?
+Registering statement [select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=?]
+Registering last query statement [select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=?]
+binding parameter [1] as [INTEGER] - [3]
+Bound [2] parameters total
+Registering result set [org.postgresql.jdbc.PgResultSet@423c5404]
+Processing result set
+Starting ResultSet row #0
+On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+hydrating entity state
+Initializing object from ResultSet: [ru.job4j.tracker.Item#3]
+Hydrating entity: [ru.job4j.tracker.Item#3]
+extracted value ([created2_0_0_] : [TIMESTAMP]) - [2026-02-22T19:26:04.011291]
+extracted value ([name3_0_0_] : [VARCHAR]) - [Learn Hibernate 5.]
+Done processing result set (1 rows)
+Total objects hydrated: 1
+Resolving attributes for [ru.job4j.tracker.Item#3]
+Processing attribute `created` : value = 2026-02-22T19:26:04.011291
+Attribute (`created`)  - enhanced for lazy-loading? - false
+Processing attribute `name` : value = Learn Hibernate 5.
+Attribute (`name`)  - enhanced for lazy-loading? - false
+Done materializing entity [ru.job4j.tracker.Item#3]
+Skipping create subselects because there are fewer than 2 results, so query by key is more efficient.
+Releasing statement [select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=('3'::int4)]
+Closing result set [org.postgresql.jdbc.PgResultSet@423c5404]
+Closing prepared statement [select item0_.id as id1_0_0_, item0_.created as created2_0_0_, item0_.name as name3_0_0_ from items item0_ where item0_.id=('3'::int4)]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initializing non-lazy collections
+Done entity load : ru.job4j.tracker.Item#3
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+Flushing session
+Processing flush-time cascades
+Dirty checking collections
+Flushing entities and processing referenced collections
+Processing unreferenced collections
+Scheduling collection removes/(re)creates/updates
+Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+Listing entities:
+ru.job4j.tracker.Item{created=2026-02-22T19:26:04.011291, name=Learn Hibernate 5., id=3}
+Executing flush
+Starting after statement execution processing [AFTER_TRANSACTION]
+Post flush
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [8fb21b0c-b478-4295-99f5-6fb445dbce3a]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@490c7a83]
+Releasing JDBC resources
+Closing logical connection
+Logical connection closed
+Opening Hibernate Session.  tenant=null
+Opened Session [5ab92c03-bbf0-4c3e-8c53-33ea6ec30ecf] at timestamp: 1771777564170
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Entity was not persistent in delete processing
+ID unsaved-value: null
+Deleting [ru.job4j.tracker.Item#3]
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+Flushing session
+Processing flush-time cascades
+Dirty checking collections
+Flushing entities and processing referenced collections
+Processing unreferenced collections
+Scheduling collection removes/(re)creates/updates
+Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+Listing entities:
+ru.job4j.tracker.Item{created=2026-02-22T19:26:04.170291200, name=null, id=3}
+Executing flush
+Deleting entity: [ru.job4j.tracker.Item#3]
+Starting after statement execution processing [AFTER_TRANSACTION]
+delete from items where id=?
+Registering statement [delete from items where id=?]
+binding parameter [1] as [INTEGER] - [3]
+Releasing statement [delete from items where id=('3'::int4)]
+Closing prepared statement [delete from items where id=('3'::int4)]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Post flush
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [5ab92c03-bbf0-4c3e-8c53-33ea6ec30ecf]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@4c447c09]
+HHH000420: Closing un-released batch
+Starting after statement execution processing [AFTER_TRANSACTION]
+Releasing JDBC resources
+Starting after statement execution processing [AFTER_TRANSACTION]
+Closing logical connection
+Logical connection closed
+Opening Hibernate Session.  tenant=null
+Opened Session [514eac20-fe14-4027-97f7-4510cb4bb2f8] at timestamp: 1771777564177
+On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+begin
+Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+Transaction begun via JDBC Connection.setAutoCommit(false)
+ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+Unable to locate HQL query plan in cache; generating (FROM Item)
+Initializing service [role=org.hibernate.hql.spi.QueryTranslatorFactory]
+QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7cdbaa50
+parse() - HQL: FROM ru.job4j.tracker.Item
+-> statement
+---> selectStatement
+-----> queryRule
+-------> selectFrom
+---------> fromClause
+-----------> fromRange
+-------------> fromClassOrOuterQueryPath
+---------------> path
+-----------------> identifier
+<----------------- identifier
+-----------------> identifier
+<----------------- identifier
+-----------------> identifier
+<----------------- identifier
+-----------------> identifier
+<----------------- identifier
+<--------------- path
+<------------- fromClassOrOuterQueryPath
+<----------- fromRange
+<--------- fromClause
+<------- selectFrom
+<----- queryRule
+<--- selectStatement
+<- statement
+throwQueryException() : no errors
+--- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       \-[FROM] Node: 'FROM'
+          \-[RANGE] Node: 'RANGE'
+             \-[DOT] Node: '.'
+                +-[DOT] Node: '.'
+                |  +-[DOT] Node: '.'
+                |  |  +-[IDENT] Node: 'ru'
+                |  |  \-[IDENT] Node: 'job4j'
+                |  \-[IDENT] Node: 'tracker'
+                \-[IDENT] Node: 'Item'
+
+select << begin [level=1, statement=select]
+FromClause{level=1} : ru.job4j.tracker.Item (<no alias>) -> item0_
+select : finishing up [level=1, statement=select]
+processQuery() :  ( SELECT ( FromClause{level=1} items item0_ ) )
+Derived SELECT clause created.
+Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Item): [items]
+    |  +-SelectExpressionImpl
+    |  | persister: SingleTableEntityPersister(ru.job4j.tracker.Item)
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+Using FROM fragment [items item0_]
+select >> end [level=1, statement=select]
+--- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (items)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'item0_.id as id1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=items,tableAlias=item0_,origin=null,columns={,className=ru.job4j.tracker.Item}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'item0_.created as created2_0_, item0_.name as name3_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[item0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'items item0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=items,tableAlias=item0_,origin=null,columns={,className=ru.job4j.tracker.Item}}
+
+throwQueryException() : no errors
+HQL: FROM ru.job4j.tracker.Item
+SQL: select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_
+throwQueryException() : no errors
+Find: FROM Item
+Named parameters: {}
+select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_
+Registering statement [select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_]
+Registering last query statement [select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_]
+Bound [1] parameters total
+Registering result set [org.postgresql.jdbc.PgResultSet@17aa8a11]
+Processing result set
+Result set row: 0
+extracted value ([id1_0_] : [INTEGER]) - [2]
+Result row: EntityKey[ru.job4j.tracker.Item#2]
+Initializing object from ResultSet: [ru.job4j.tracker.Item#2]
+Hydrating entity: [ru.job4j.tracker.Item#2]
+extracted value ([created2_0_] : [TIMESTAMP]) - [2026-02-22T00:00]
+extracted value ([name3_0_] : [VARCHAR]) - [test]
+Done processing result set (1 rows)
+Total objects hydrated: 1
+Resolving attributes for [ru.job4j.tracker.Item#2]
+Processing attribute `created` : value = 2026-02-22T00:00
+Attribute (`created`)  - enhanced for lazy-loading? - false
+Processing attribute `name` : value = test
+Attribute (`name`)  - enhanced for lazy-loading? - false
+Done materializing entity [ru.job4j.tracker.Item#2]
+Releasing statement [select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_]
+Closing result set [org.postgresql.jdbc.PgResultSet@17aa8a11]
+Closing prepared statement [select item0_.id as id1_0_, item0_.created as created2_0_, item0_.name as name3_0_ from items item0_]
+Starting after statement execution processing [AFTER_TRANSACTION]
+Initializing non-lazy collections
+committing
+ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+SessionImpl#beforeTransactionCompletion()
+Automatically flushing session
+Flushing session
+Processing flush-time cascades
+Dirty checking collections
+Flushing entities and processing referenced collections
+Processing unreferenced collections
+Scheduling collection removes/(re)creates/updates
+Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+Listing entities:
+ru.job4j.tracker.Item{created=2026-02-22T00:00, name=test, id=2}
+Executing flush
+Starting after statement execution processing [AFTER_TRANSACTION]
+Post flush
+LogicalConnection#beforeTransactionCompletion
+SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+Preparing to commit transaction via JDBC Connection.commit()
+Transaction committed via JDBC Connection.commit()
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+Releasing JDBC resources
+ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+LogicalConnection#afterTransaction
+Releasing JDBC resources
+Initiating JDBC connection release from afterTransaction
+SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+Closing session [514eac20-fe14-4027-97f7-4510cb4bb2f8]
+Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@7930ffa9]
+Releasing JDBC resources
+Closing logical connection
+Logical connection closed
+HHH10001008: Cleaning up connection pool [jdbc:postgresql://127.0.0.1:5432/tracker]
+Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
